@@ -8,11 +8,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CreateListing from "./pages/CreateListing";
 import Contact from "./pages/Contact";
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
+     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
